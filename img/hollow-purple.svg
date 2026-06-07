@@ -1,0 +1,45 @@
+<svg viewBox="0 0 600 338" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%"><stop offset="0%" stop-color="#1a0035"/><stop offset="100%" stop-color="#06080f"/></radialGradient>
+    <radialGradient id="vortex" cx="35%" cy="40%"><stop offset="0%" stop-color="#e8b4ff" stop-opacity="0.9"/><stop offset="25%" stop-color="#9d4edd" stop-opacity="0.8"/><stop offset="60%" stop-color="#4a0080" stop-opacity="0.5"/><stop offset="100%" stop-color="#06080f" stop-opacity="0"/></radialGradient>
+    <radialGradient id="ball" cx="50%" cy="50%"><stop offset="0%" stop-color="#00ffff"/><stop offset="60%" stop-color="#0088cc"/><stop offset="100%" stop-color="#004488"/></radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="softglow"><feGaussianBlur stdDeviation="8" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <!-- sky -->
+  <rect width="600" height="338" fill="url(#bg)"/>
+  <!-- ground -->
+  <ellipse cx="300" cy="320" rx="320" ry="60" fill="#0d0020" opacity="0.8"/>
+  <!-- purple vortex spiral -->
+  <circle cx="210" cy="130" r="80" fill="url(#vortex)" filter="url(#softglow)"/>
+  <circle cx="210" cy="130" r="55" fill="none" stroke="#c77dff" stroke-width="3" stroke-dasharray="8 4" opacity="0.7"/>
+  <circle cx="210" cy="130" r="35" fill="none" stroke="#e8b4ff" stroke-width="2" stroke-dasharray="5 3" opacity="0.8"/>
+  <circle cx="210" cy="130" r="18" fill="#ffffff" opacity="0.15" filter="url(#glow)"/>
+  <!-- swirl lines -->
+  <path d="M170,110 Q210,80 250,120 Q230,150 190,145 Q165,135 170,110" fill="none" stroke="#b57bee" stroke-width="2" opacity="0.6"/>
+  <path d="M155,125 Q210,60 265,115 Q250,165 195,158 Q148,148 155,125" fill="none" stroke="#9d4edd" stroke-width="1.5" opacity="0.5"/>
+  <!-- character silhouette body -->
+  <g filter="url(#glow)">
+    <ellipse cx="320" cy="195" rx="14" ry="14" fill="#1a0030"/><!-- head -->
+    <rect x="313" y="208" width="14" height="32" rx="4" fill="#1a0030"/><!-- torso -->
+    <!-- arm reaching -->
+    <line x1="313" y1="215" x2="285" y2="228" stroke="#1a0030" stroke-width="7" stroke-linecap="round"/>
+    <line x1="327" y1="215" x2="345" y2="225" stroke="#1a0030" stroke-width="7" stroke-linecap="round"/>
+    <!-- legs -->
+    <line x1="316" y1="240" x2="305" y2="265" stroke="#1a0030" stroke-width="7" stroke-linecap="round"/>
+    <line x1="324" y1="240" x2="335" y2="265" stroke="#1a0030" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <!-- cyan energy ball held out -->
+  <circle cx="272" cy="228" r="10" fill="url(#ball)" filter="url(#glow)"/>
+  <circle cx="272" cy="228" r="14" fill="none" stroke="#00ffff" stroke-width="1.5" opacity="0.6"/>
+  <!-- hair/spiky details on character -->
+  <path d="M312,185 L308,178 L315,183 L311,174 L318,181 L322,173 L322,182 L328,176 L325,185" fill="#2a0040" stroke="#4a0060" stroke-width="0.5"/>
+  <!-- energy particles -->
+  <circle cx="250" cy="170" r="3" fill="#c77dff" opacity="0.8"/>
+  <circle cx="280" cy="155" r="2" fill="#e8b4ff" opacity="0.7"/>
+  <circle cx="180" cy="190" r="4" fill="#9d4edd" opacity="0.6"/>
+  <circle cx="155" cy="160" r="2" fill="#c77dff" opacity="0.5"/>
+  <circle cx="370" cy="170" r="2" fill="#6a4cff" opacity="0.6"/>
+  <!-- ground glow -->
+  <ellipse cx="300" cy="310" rx="180" ry="20" fill="#7b2fbe" opacity="0.12"/>
+</svg>

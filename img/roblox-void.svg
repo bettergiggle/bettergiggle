@@ -1,0 +1,38 @@
+<svg viewBox="0 0 600 338" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="vbg" cx="50%" cy="50%"><stop offset="0%" stop-color="#0a0020"/><stop offset="100%" stop-color="#06080f"/></radialGradient>
+    <radialGradient id="vportal" cx="50%" cy="50%"><stop offset="0%" stop-color="#c77dff" stop-opacity="0.8"/><stop offset="30%" stop-color="#7b2fbe" stop-opacity="0.5"/><stop offset="60%" stop-color="#00b4d8" stop-opacity="0.2"/><stop offset="100%" stop-color="#06080f" stop-opacity="0"/></radialGradient>
+    <filter id="vglow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="600" height="338" fill="url(#vbg)"/>
+  <!-- void portal -->
+  <ellipse cx="300" cy="150" rx="110" ry="110" fill="url(#vportal)" filter="url(#vglow)"/>
+  <ellipse cx="300" cy="150" rx="80" ry="80" fill="none" stroke="#c77dff" stroke-width="3" opacity="0.6"/>
+  <ellipse cx="300" cy="150" rx="55" ry="55" fill="none" stroke="#9d4edd" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="300" cy="150" rx="32" ry="32" fill="none" stroke="#e8b4ff" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.7"/>
+  <!-- spiral effect in portal -->
+  <path d="M300,150 Q330,120 300,100 Q270,80 250,110 Q230,140 260,160 Q290,180 320,165 Q345,148 335,125" fill="none" stroke="#c77dff" stroke-width="1.5" opacity="0.5"/>
+  <!-- energy beams from portal -->
+  <path d="M300,40 L300,0" stroke="#c77dff" stroke-width="2" opacity="0.5" filter="url(#vglow)"/>
+  <path d="M195,95 L160,65" stroke="#9d4edd" stroke-width="1.5" opacity="0.4"/>
+  <path d="M405,95 L440,65" stroke="#9d4edd" stroke-width="1.5" opacity="0.4"/>
+  <path d="M190,150 L140,150" stroke="#00b4d8" stroke-width="1.5" opacity="0.4"/>
+  <path d="M410,150 L460,150" stroke="#00b4d8" stroke-width="1.5" opacity="0.4"/>
+  <!-- Roblox character falling into portal -->
+  <rect x="271" y="200" width="58" height="50" rx="5" fill="#0d0020" stroke="#c77dff" stroke-width="1.5"/>
+  <rect x="283" y="213" width="13" height="11" rx="2" fill="#c77dff" opacity="0.8"/>
+  <rect x="304" y="213" width="13" height="11" rx="2" fill="#c77dff" opacity="0.8"/>
+  <rect x="255" y="204" width="14" height="38" rx="4" fill="#0d0020" stroke="#9d4edd" stroke-width="1.5" transform="rotate(-20 262 223)"/>
+  <rect x="331" y="204" width="14" height="38" rx="4" fill="#0d0020" stroke="#9d4edd" stroke-width="1.5" transform="rotate(20 338 223)"/>
+  <rect x="275" y="252" width="22" height="38" rx="4" fill="#0d0020" stroke="#7b2fbe" stroke-width="1.5" transform="rotate(-10 286 271)"/>
+  <rect x="303" y="252" width="22" height="38" rx="4" fill="#0d0020" stroke="#7b2fbe" stroke-width="1.5" transform="rotate(10 314 271)"/>
+  <!-- purple energy around character -->
+  <rect x="262" y="192" rx="10" width="76" height="108" fill="none" stroke="#c77dff" stroke-width="1" opacity="0.25" filter="url(#vglow)"/>
+  <!-- stars/particles -->
+  <circle cx="150" cy="100" r="2" fill="#c77dff" opacity="0.7"/>
+  <circle cx="450" cy="90" r="2.5" fill="#00b4d8" opacity="0.6"/>
+  <circle cx="80" cy="180" r="1.5" fill="#9d4edd" opacity="0.5"/>
+  <circle cx="520" cy="170" r="2" fill="#c77dff" opacity="0.5"/>
+  <circle cx="200" cy="270" r="3" fill="#7b2fbe" opacity="0.4" filter="url(#vglow)"/>
+  <circle cx="400" cy="265" r="2.5" fill="#00b4d8" opacity="0.4" filter="url(#vglow)"/>
+</svg>

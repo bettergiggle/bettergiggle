@@ -1,0 +1,23 @@
+# Videos (too large for GitHub)
+*.mp4
+*.mov
+*.avi
+
+# Old website version
+BitterGiggle-Website/
+
+# Scratch/notes files
+bettergiggle.txt
+
+# Root duplicate images (live copies are in img/)
+01_hollow_purple_jjk.jpg
+02_domain_expansion_jjk.jpg
+04_purple_lightning_stickman.jpg
+
+# Setup scripts (contain credentials)
+push-to-github.bat
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,42 @@
+<svg viewBox="0 0 600 338" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="cbg" cx="50%" cy="50%"><stop offset="0%" stop-color="#1a0035"/><stop offset="100%" stop-color="#06080f"/></radialGradient>
+    <radialGradient id="caura" cx="50%" cy="50%"><stop offset="0%" stop-color="#c77dff" stop-opacity="0.7"/><stop offset="50%" stop-color="#7b2fbe" stop-opacity="0.3"/><stop offset="100%" stop-color="#06080f" stop-opacity="0"/></radialGradient>
+    <filter id="cglow"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="600" height="338" fill="url(#cbg)"/>
+  <!-- background energy wisps -->
+  <path d="M50,338 Q100,250 80,180 Q60,120 120,80" fill="none" stroke="#4a0080" stroke-width="2" opacity="0.4"/>
+  <path d="M550,338 Q500,250 520,180 Q540,120 480,80" fill="none" stroke="#4a0080" stroke-width="2" opacity="0.4"/>
+  <path d="M0,150 Q80,140 120,170 Q160,200 140,240" fill="none" stroke="#6a00aa" stroke-width="1.5" opacity="0.3"/>
+  <path d="M600,120 Q520,130 480,160 Q440,195 460,240" fill="none" stroke="#6a00aa" stroke-width="1.5" opacity="0.3"/>
+  <!-- aura -->
+  <ellipse cx="300" cy="200" rx="120" ry="140" fill="url(#caura)" filter="url(#cglow)"/>
+  <!-- lightning bolts -->
+  <path d="M220,80 L235,130 L215,130 L240,185" fill="none" stroke="#c77dff" stroke-width="2.5" opacity="0.8" filter="url(#cglow)"/>
+  <path d="M380,90 L365,135 L385,135 L355,190" fill="none" stroke="#c77dff" stroke-width="2.5" opacity="0.8" filter="url(#cglow)"/>
+  <path d="M160,160 L185,185 L170,185 L200,215" fill="none" stroke="#9d4edd" stroke-width="2" opacity="0.6"/>
+  <path d="M440,160 L415,185 L430,185 L400,215" fill="none" stroke="#9d4edd" stroke-width="2" opacity="0.6"/>
+  <!-- figure head -->
+  <ellipse cx="300" cy="155" rx="22" ry="22" fill="#0d0020" filter="url(#cglow)"/>
+  <!-- figure body -->
+  <rect x="290" y="176" width="20" height="45" rx="5" fill="#0d0020"/>
+  <!-- arms wide battle pose -->
+  <path d="M290,188 Q255,178 230,195 Q215,203 200,190" fill="none" stroke="#0d0020" stroke-width="10" stroke-linecap="round"/>
+  <path d="M310,188 Q345,178 370,195 Q385,203 400,190" fill="none" stroke="#0d0020" stroke-width="10" stroke-linecap="round"/>
+  <!-- legs stance -->
+  <path d="M293,220 Q278,248 268,270" fill="none" stroke="#0d0020" stroke-width="10" stroke-linecap="round"/>
+  <path d="M307,220 Q322,248 332,270" fill="none" stroke="#0d0020" stroke-width="10" stroke-linecap="round"/>
+  <!-- glowing purple eyes -->
+  <ellipse cx="293" cy="154" rx="5" ry="6" fill="#c77dff" filter="url(#cglow)"/>
+  <ellipse cx="307" cy="154" rx="5" ry="6" fill="#c77dff" filter="url(#cglow)"/>
+  <!-- energy particles -->
+  <circle cx="260" cy="120" r="3" fill="#e8b4ff" opacity="0.9" filter="url(#cglow)"/>
+  <circle cx="340" cy="115" r="4" fill="#c77dff" opacity="0.8"/>
+  <circle cx="230" cy="145" r="2" fill="#e8b4ff" opacity="0.7"/>
+  <circle cx="370" cy="140" r="3" fill="#c77dff" opacity="0.7"/>
+  <circle cx="250" cy="240" r="2" fill="#9d4edd" opacity="0.6"/>
+  <circle cx="355" cy="235" r="3" fill="#9d4edd" opacity="0.6"/>
+  <!-- ground -->
+  <ellipse cx="300" cy="310" rx="140" ry="18" fill="#2d0060" opacity="0.5"/>
+</svg>
